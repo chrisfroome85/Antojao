@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalizeExperiencie2">
+
+    <TextView
+        android:id="@+id/tittlePersonalizeGuest"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona los huéspedes"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/primary_text"
+        />
+
+    <TextView
+        android:id="@+id/txt_personalize_experience_resume"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tittlePersonalizeGuest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Para esta experiencia en concreto te ofrecemos las siguientes opciones"
+
+        android:layout_margin="50dp"
+        android:textAlignment="center"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxA1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:checked="false"
+        android:clickable="true"
+        android:focusable="auto"
+        android:text="Yo solo"
+        android:textColor="@color/secondary_text"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_personalize_experience_resume" />
+
+    <CheckBox
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxA1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/checkBoxA2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Con mi pareja"
+        android:textColor="@color/secondary_text"
+        android:textStyle="bold"
+        />
+
+    <CheckBox
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxA2"
+        android:layout_marginTop="20dp"
+        android:id="@+id/checkBoxA3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yo y 3 de mis amigos"
+        android:textColor="@color/secondary_text"
+        android:textStyle="bold"
+        />
+
+    <CheckBox
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxA3"
+        android:layout_marginTop="20dp"
+        android:id="@+id/checkBoxA4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yo y 5 de mis amigos"
+        android:textColor="@color/secondary_text"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:onClick="SiguientePerso"
+        android:text="Siguiente"
+        android:theme="@style/RaisedButtonLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

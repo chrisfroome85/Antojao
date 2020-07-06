@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+
+    tools:ignore="NamespaceTypo"
+    android1:layout_width="match_parent"
+    android1:layout_height="200dp"
+    android:cardCornerRadius="15dp"
+    android1:layout_marginBottom="10dp"
+    >
+
+    <FrameLayout
+        android1:layout_width="match_parent"
+        android1:layout_height="match_parent">
+        
+        <ImageView
+            android1:id="@+id/PictureCard"
+            android1:layout_width="match_parent"
+            android1:layout_height="200dp"
+            android1:src="@drawable/test"
+            android1:scaleType="centerCrop"/>
+        <LinearLayout
+            android1:layout_width="match_parent"
+            android1:layout_height="wrap_content"
+            android1:orientation="vertical"
+            android1:layout_gravity="bottom"
+            android1:paddingLeft="15dp"
+            android1:paddingBottom="10dp"
+            android1:background="@color/background_image">
+
+            <TextView
+                android1:id="@+id/UsernameCard"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:text="Guatapé"
+                android1:textColor="@color/icons"
+                android1:textSize="25sp"/>
+            <LinearLayout
+                android1:layout_width="match_parent"
+                android1:layout_height="wrap_content">
+                <TextView
+                    android1:id="@+id/FirstWord"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:text="3:30 horas"
+                    android1:textColor="@color/icons"
+                    android1:textSize="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android1:layout_width="match_parent"
+                android1:layout_height="wrap_content"
+                android1:orientation="horizontal"
+                android1:layout_marginTop="10dp">
+
+                <CheckBox
+                    android1:id="@+id/likeCheckCard"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:button="@drawable/checkbox_selector"/>
+
+                <TextView
+                    android1:id="@+id/Rating"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:paddingLeft="10dp"
+                    android1:text="Puntuación: 4,4"
+                    android1:textColor="@color/icons"
+                    android1:textSize="15sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

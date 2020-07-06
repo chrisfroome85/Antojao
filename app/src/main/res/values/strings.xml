@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Antojao</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Lorem">Vive la mejor noche de tu vida en Medellín acompañado de las mejores mujeres.
+    Tendrás acceso a cualquier discoteca privada en el sector. Trago ilimitado cortesía de la app.
+    Guía turístico especializado en este tipo de eventos, con soporte de conductor elegido. Tú
+    controlarás la hora de llegada, el tour durará máximo hasta las 4 AM hora de Colombia.
+    Asumes la responsabilidad en caso de pérdida de dinero, documentos, etc.
+    </string>
+</resources>

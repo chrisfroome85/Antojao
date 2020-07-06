@@ -1,0 +1,139 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prueba.view.fragment.ProfileFragment">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/primary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:statusBarScrim="@color/primary">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="200dp"
+                android:paddingBottom="20dp"
+                android:layout_gravity="center|top"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/userNameProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Santiago12"
+                    android:textColor="@color/icons"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="30dp"
+        android:elevation="10dp"
+        android:src="@drawable/imageprofile"
+        app:dependTargetY="-260dp"
+        app:dependsOn="@+id/appBarProfile"
+        app:dependType="y"
+        app:layout_behavior="com.zoonref.SimpleViewBehavior"
+        app:targetHeight="40dp"
+        app:targetWidth="40dp"
+        app:targetX="16dp"
+        app:targetY="-15dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/usernameToolbarProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="-100dp"
+        android:alpha="0"
+        app:dependTargetY="-250dp"
+        app:dependsOn="@+id/appBarProfile"
+        app:dependType="y"
+        android:elevation="10dp"
+        android:gravity="center_vertical"
+        app:targetAlpha="1"
+        app:targetY="-5dp"
+        android:text="Santiago"
+        android:textColor="@color/icons"
+        android:textSize="18dp"
+        app:layout_behavior="com.zoonref.SimpleViewBehavior"
+        />
+
+    <TextView
+        android:id="@+id/correo_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="santiago1234@gmail.com"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/primary_text"
+        android:layout_marginTop="-50dp"
+        />
+
+    <TextView
+        android:id="@+id/contraseña_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="*********"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/primary_text"
+        />
+
+    <TextView
+        android:id="@+id/addDescription_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:text="Agrega una descripción"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/text_color"
+        />
+
+    <ImageView
+        android:id="@+id/image_desciption_profile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/profiledescription"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="80dp"
+        android:scaleType="centerCrop"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
